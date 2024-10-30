@@ -1,0 +1,43 @@
+.t_shirts {
+    .content {
+        gap: 90px 56px;
+    }
+    .item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: min-content;
+        flex-wrap: wrap;
+        .item_img {
+            box-sizing: border-box;
+            margin-bottom: 16px;
+            width: 262px;
+            border: 1px solid rgb(196, 196, 196);
+        }
+        .item_descr {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 90px;
+            justify-content: space-between;
+        }
+        .item_title {
+            color: rgb(0, 0, 0);
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .item_price {
+            color: rgb(0, 0, 0);
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 14px;
+            font-weight: 400;
+        }
+    }
+}

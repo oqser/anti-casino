@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Sports World;
+    src: url(../styles/fonts/SportsWorld/SportsWorld.otf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../styles/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+header {
+    background-image: url(../images/header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 165px;
+    background-color: black;
+    box-sizing: border-box;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .logo {
+        box-sizing: border-box;
+        height: 100%;
+        width: 159px;
+        background-color: rgb(255, 255, 255);
+        padding: 13px 20px 26px 26px;
+        span {
+            font-family: "Sports World";
+            font-weight: 400;
+            color: rgb(0, 0, 0);
+            letter-spacing: 0%;
+        }
+        span:first-child {
+            font-size: 40px;
+        }
+        span:nth-child(2) {
+            font-size: 43px;
+            line-height: 35px;
+        }
+        span:last-child {
+            font-size: 73px;
+            line-height: 55px;
+        }
+    }
+    .mobile-menu-btn {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 30px 0 21px;
+        box-sizing: border-box;
+    }
+    .menu_top {
+        display: flex;
+        gap: 37px;
+        justify-content: flex-end;
+        align-items: center;
+        a {
+            display: flex;
+            color: rgb(255, 255, 255);
+            font-family: Roboto;
+            font-size: 19px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .contacts {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .search img {
+                width: 18px;
+                height: 18px;
+            }
+            .search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    .menu_bot {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 43px;
+        a {
+            display: flex;
+            color: rgb(249, 225, 0);
+            font-family: Sports World;
+            font-size: 25px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .donate {
+            color: rgb(255, 255, 255);
+            background-color: rgb(79, 70, 246);
+            width: 150px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.free-standart {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 57px;
+    background-color: rgb(249, 225, 0);
+    align-items: center;
+    padding: 11px;
+    justify-content: center;
+    gap: 6px;
+    span {
+        color: rgb(0, 0, 0);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+    }
+    span:first-child {
+        font-weight: 700;
+    }
+}
+.banner {
+    box-sizing: border-box;
+    height: 142px;
+    background-color: rgb(249, 225, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        color: rgb(0, 0, 0);
+        font-family: Sports World;
+        font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+button,
+a {
+    transition: transform 0.4s ease-in-out;
+}
+
+button:hover,
+a:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width: 767px) {
+    body {
+    }
+    header {
+        width: 100%;
+        height: 75px;
+        padding: 0 25px;
+        background-size: inherit;
+        position: relative;
+        .menu {
+            display: none;
+        }
+        .mobile-menu-btn {
+            display: block;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            overflow: visible;
+            z-index: 100;
+            height: 100px;
+            width: 96px;
+            background: rgb(255, 255, 255);
+            padding: 16px 12px;
+            span:first-child {
+                font-size: 26px;
+                line-height: 22px;
+            }
+            span:nth-child(2) {
+                font-size: 28px;
+                line-height: 22px;
+            }
+            span:last-child {
+                font-size: 48px;
+                line-height: 36px;
+            }
+        }
+    }
+}

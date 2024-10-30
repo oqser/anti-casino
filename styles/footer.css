@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Sports World;
+    src: url(../styles/fonts/SportsWorld/SportsWorld.otf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../styles/fonts/Roboto/Roboto-Regular.ttf);
+}
+@media screen and (max-width: 768px) {
+}
+
+footer {
+    box-sizing: border-box;
+    height: 295px;
+    flex-shrink: 0;
+    background-image: url(../images/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .logo {
+        box-sizing: border-box;
+        height: 165px;
+        width: 159px;
+        background-color: rgb(255, 255, 255);
+        padding: 13px 20px 26px 26px;
+        margin-bottom: 21px;
+        span {
+            font-family: "Sports World";
+            font-weight: 400;
+            color: rgb(0, 0, 0);
+            letter-spacing: 0%;
+        }
+        span:first-child {
+            font-size: 40px;
+        }
+        span:nth-child(2) {
+            font-size: 43px;
+            line-height: 35px;
+        }
+        span:last-child {
+            font-size: 73px;
+            line-height: 55px;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 30px;
+        margin-bottom: 17px;
+        a {
+            color: rgb(255, 255, 255);
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    .contacts {
+        display: flex;
+        gap: 8px;
+    }
+    button,
+    a {
+        transition: transform 0.4s ease-in-out;
+    }
+
+    button:hover,
+    a:hover {
+        transform: scale(1.1);
+    }
+}
+@media screen and (max-width: 767px) {
+    .menu {
+        margin-bottom: 6px !important;
+    }
+    .menu {
+        margin: 0 100px;
+    }
+    .logo {
+        width: 159px;
+    }
+}
